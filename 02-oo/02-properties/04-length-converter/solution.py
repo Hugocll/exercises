@@ -28,3 +28,8 @@ class LengthConverter:
     @inch.setter
     def inch(self, value):
         self.__length_in_meter = value / LengthConverter.INCH_PER_METER
+
+
+converter = LengthConverter()    
+converter.meter = 100
+print(converter.feet())
